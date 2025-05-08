@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <!-- code for offcanvas -->
+    <div class="container-fluid" style="position: sticky; top: 0; z-index: 1;">
+        <div class="row bg-warning" style="text-align: center;">
+
+            <!-- button for offcanvas -->
+            <div class="col-sm-1">
+                <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling">
+                    <i class="fa-solid fa-bars fa-xs"></i>
+                </button>
+            </div>
+
+            <div class="offcanvas offcanvas-start" id="offcanvasScrolling">
+        
+                <!-- contents inside the offcanvas -->
+                <div class="offcanvas-header">
+                    <!-- logo -->
+                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+                        <h1>Pet<span style="color: palevioletred;">P</span>al</h1>
+                    </h5>
+        
+                    <!-- close button for offcanvas -->
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+        
+                <!-- contents inside offcanvas -->
+                <div class="offcanvas-body">
+                    <hr>
+                    
+                    <a style="text-decoration: none; font-size: x-large;" href="Home.html">Home</a>        <br>
+                    <a style="text-decoration: none; font-size: x-large;" href="About.html">About</a>      <br>
+                    <a style="text-decoration: none; font-size: x-large;" href="Services.html">Services</a>        <br>
+                    <a style="text-decoration: none; font-size: x-large;" href="Gallery.html">Gallery</a>       <br>
+
+                    <hr>
+
+                    <a style="text-decoration: none; font-size: x-large;" href="Donate.html">Donate Us</a>        <br>
+                    <a style="text-decoration: none; font-size: x-large;" href="Donation.html">Help</a>      <br>
+
+                </div>
+            </div>
+            <!-- ending offcanvas -->
+        </div>
+    </div>
+
+    <!-- navbar with search bar -->
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid d-flex">
+            <!-- Logo Section -->
+            <a href="Home.html" >
+                <img style="margin-left: 60px;" src="logo.png" alt="Logo" width="120px" height="120px">
+            </a>
+    
+            <!-- Search Form Section -->
+            <form class="d-flex">
+                <input class="form-control me-2 " type="search" placeholder="Search..." style="width: 100%; border: 1px solid black; border-radius: 10px;">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    
+    
+    <hr>
+
+    <!-- image code -->
+    <div class="container-fluid">
+        <div class="row">
+            <img src="pic7.png" alt="pic" class="img-fluid col-md-12">
+        </div>
+    </div>
+
+    <br>
+
+    <!-- code for paragraph 1 -->
+    <p style="margin: 20px; font-size: 25px;">
+        <span style="font-size: 50px; margin-left: 40px;">A</span>t PetPal, we offer a range of services to make your pet adoption journey seamless. 
+        From personalized pet matchmaking and expert care guidance to pre-adoption health check-ups and behavioral training support, 
+        we ensure every pet and adopter is perfectly matched. Additional services include foster care, spaying/neutering, post-adoption support, 
+        and community events. We’re here to help you welcome your new furry family member with love and care! 🐾❤️
+    </p>
+
+    <br><br><br><br>
+
+    <!-- code for accordian -->
+    <div class="container-fluid">
+        <div class="row" style="margin: 10px;">
+
+            <!-- accordian 1 -->
+            <div class="col-md-6">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serv1" style="border: 2px solid darkkhaki;">
+                            <h4>Pet Adoption Assistance 🐾</h4>
+                        </button>            
+                       
+                        <!-- accordian body -->
+                        <div id="serv1" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>Help finding the perfect pet for your home and lifestyle.</li>
+                                    <li>Online and in-person pet profiles.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- accordian 2 -->
+            <div class="col-md-6">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serv2" style="border: 2px solid darkkhaki;">
+                            <h4>Pet Care Guidance 📚</h4>
+                        </button>            
+                       
+                        <div id="serv2" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>Expert advice on pet care, nutrition, and training.</li>
+                                    <li>Starter kits for new pet parents.</li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- accordian 3 -->
+            <div class="col-md-6 mt-5">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serv3" style="border: 2px solid darkkhaki;">
+                            <h4>Health Check-Ups 🩺</h4>
+                        </button>            
+                       
+                        <div id="serv3" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>Pre-adoption veterinary check-ups.</li>
+                                    <li>Vaccinations, deworming, and microchipping.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- accordian 4 -->
+            <div class="col-md-6 mt-5">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serv4" style="border: 2px solid darkkhaki;">
+                            <h4>Behavioral Training Support 🐕‍🦺</h4>
+                        </button>            
+                       
+                        <div id="serv4" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>Assistance with basic obedience and socialization training.</li>
+                                    <li>Resources for addressing behavioral issues.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- accordian 5 -->
+            <div class="col-md-6 mt-5">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serv5" style="border: 2px solid darkkhaki;">
+                            <h4>Foster Care Services 🏠</h4>
+                        </button>            
+                       
+                        <div id="serv5" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>Opportunities to foster pets before adoption.</li>
+                                    <li>Support for foster parents with food, supplies, and medical care.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- accordian 6 -->
+            <div class="col-md-6 mt-5">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serv6" style="border: 2px solid darkkhaki;">
+                            <h4>Pet Matchmaking Services ❤️</h4>
+                        </button>            
+                       
+                        <div id="serv6" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>Personalized recommendations to find the perfect pet for your family.</li>
+                                    <li>Compatibility assessments based on your preferences and home environment.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        
+            <!-- accordian 7 -->
+            <div class="col-md-6 mt-5">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serv7" style="border: 2px solid darkkhaki;">
+                            <h4>Community Events 🎉</h4>
+                        </button>            
+                       
+                        <div id="serv7" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>Adoption drives, pet fairs, and meet-and-greets with animals.</li>
+                                    <li>Opportunities for adopters to connect and share experiences.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- accordian 8 -->
+            <div class="col-md-6 mt-5">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serv8" style="border: 2px solid darkkhaki;">
+                            <h4>Emergency Help 🚑</h4>
+                        </button>            
+                       
+                        <div id="serv8" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>Support during emergencies (temporary shelter, medical care, etc.).</li>
+                                    <li>Hotline for lost or injured pets.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <br><br>
+
+
+    <div class="container-fluid" style="text-align: center; margin-top: 50px; background-color: lavender;">
+        <div class="row" style="justify-content: center; align-items: center; padding-bottom: 40px;">
+
+            <h1 style="text-align: center; background-color: lavender;">
+                <i>Ready to welcome a new family member? Explore our pets or contact us today!</i>
+            </h1>
+
+            <br><br><br><br><br>
+
+            <!-- code for popover -->
+            <div class="col-md-4">
+
+                <button class="btn btn-warning" data-bs-toggle="popover" title="DETAILS" 
+                data-bs-content="Call us at: +1 (123) 456-7890 / Email us at: info@animalshelter.org">Get in Touch</button>
+
+            </div>
+
+            <div class="col-md-4">
+                <button class="btn btn-warning" id="liveToastBtn">View Adoptable Pets</button>
+
+                <!-- Toast component -->
+                <div class="toast-container position-fixed bottom-0 end-10">
+
+                    <div id="liveToast" class="toast" >
+
+                        <div class="toast-header">
+                            <img src="pet8.png" style="width: 20rem;" class="rounded me-2" alt="...">
+                            <strong  style="margin-left: 15px;">Message</strong>
+                            <button type="button" class="btn-close" data-bs-dismiss="toast" ></button>
+                        </div>
+
+                        <div class="toast-body">
+                            <h5>Please visit the Home and About page of our website.</h5>
+                            <br>
+                            <h6 class="text-success">Thank You!</h6>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+                <button class="btn btn-warning" type="button"><a href="Donate.html" style="text-decoration: none; color: black;">Donate to Support Our Work</a></button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Initialize Popovers -->
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+       })
+    </script>
+
+    <!-- JavaScript to show the toast -->
+    <script>
+        var toastTrigger = document.getElementById('liveToastBtn');
+        var toastLiveExample = document.getElementById('liveToast');
+        if (toastTrigger) {
+            toastTrigger.addEventListener('click', function () {
+                var toast = new bootstrap.Toast(toastLiveExample);
+                toast.show();
+            });
+        }
+    </script>
+
+
+    <br><br><br><br>
+
+    <!-- code for table -->
+    <div class="container">
+        <div class="row">
+            <table class="table table-hover table table-striped table table-bordered">							
+                <tr>
+                    <th>Service</th>
+                    <th>Description</th>
+                    <th>Eligibility</th>
+                    <th>Cost</th>
+                    <th>Location</th>
+                    <th>Hours</th>
+                    <th>Process</th>
+                    <th>Contact Info</th>
+                    <th>Additional Info</th>
+                </tr>
+    
+                <tr>
+                    <td>Adoption</td>
+                    <td>Find your forever furry friend!</td>
+                    <td>Must be 18+ years old</td>
+                    <td>$50-$150</td>
+                    <td>Shelter Office</td>
+                    <td>Mon-Sun, 10 AM - 6 PM</td>
+                    <td>Fill out application, interview</td>
+                    <td>(XXX) XXX-XXXX</td>
+                    <td>Adoption event every 1st Sat/month</td>
+                </tr>
+    
+                <tr>
+                    <td>Spay/Neuter</td>
+                    <td>Prevent overpopulation by spaying/neutering pets</td>
+                    <td>Any pet needing procedure</td>
+                    <td>$30-$75</td>
+                    <td>On-site Clinic</td>
+                    <td>Mon-Fri, 9 AM - 4 PM</td>
+                    <td>Call to schedule, bring pet</td>
+                    <td>(XXX) XXX-XXXX</td>
+                    <td>Low-cost option for community</td>
+                </tr>
+    
+                <tr>
+                    <td>Microchipping</td>
+                    <td>Ensure your pet's safety with a microchip</td>
+                    <td>Any pet over 8 weeks old</td>
+                    <td>$20</td>
+                    <td>Shelter or Clinic</td>
+                    <td>Tues-Sat, 11 AM - 5 PM</td>
+                    <td>Walk-in or appointment</td>
+                    <td>(XXX) XXX-XXXX</td>
+                    <td>Includes registration</td>
+                </tr>
+    
+                <tr>
+                    <td>Volunteer</td>
+                    <td>Help us care for animals in need</td>
+                    <td>18+ years, application req.</td>
+                    <td>Free</td>
+                    <td>Shelter Grounds</td>
+                    <td>Flexible, weekends preferred</td>
+                    <td>Fill out volunteer form</td>
+                    <td>(XXX) XXX-XXXX</td>
+                    <td>Volunteers needed for adoption events</td>
+                </tr>
+    
+                <tr>
+                    <td>Emergency Care</td>
+                    <td>Immediate care for injured or sick animals</td>
+                    <td>All animals</td>
+                    <td>Varies</td>
+                    <td>Emergency Clinic</td>
+                    <td>24/7</td>
+                    <td>Call ahead if possible</td>
+                    <td>(XXX) XXX-XXXX</td>
+                    <td>Critical cases only</td>
+                </tr>
+    
+            </table>
+        </div>
+    </div>
+    
+
+    <br><br><br><br>
+    <hr>
+
+    <!-- code for footer -->
+    <footer style="margin-bottom: 20px;">
+        <div class="container-fluid">
+
+            <div class="row">
+                <!-- footer logo -->
+                <div class="col-md-3">        
+                    
+                    <div class="foot" style="margin-left: 70px;"><img  src="logo.png" alt="Logo"  width="80px" height="80px"></div> 
+                           
+                </div> 
+
+                <!-- resource details using gridline components -->
+                <div class="col-md-3">
+                    <h4>Resources</h4>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">FAQs</a>       <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Mobile App Download</a>        <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Partnerships</a>           <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">News Center</a>            <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Put Petfinder On Your Site</a>         <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">For Developers</a>         <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Contact Us</a>         <br>              
+                </div>
+
+                <!-- Adopt or Get Involved details using gridline components -->
+                <div class="col-md-3">        
+                    
+                    <h4>Adopt or Get Involved</h4>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Adopt or Get Involved</a>       <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">All Adopt or Get Involved</a>        <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Adopting Pets</a>           <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Animal Shelters & Rescues</a>            <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Other Types of Pets</a>         <br>      
+                           
+                </div> 
+
+                <!-- About Dogs & Cats details using gridline components -->
+                <div class="col-md-3">        
+                    
+                    <h4>About Dogs & Cats</h4>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Dogs & Cats Adoption</a>       <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Dogs & Cats Breeds</a>        <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Feeding Your Dogs & Cats</a>           <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Dogs & Cats Behavior</a>            <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Dogs & Cats Health & Wellness</a>         <br> 
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Dogs & Cats Training</a>         <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Dogs & Cats Other Dog Information</a>         <br>
+                           
+                </div>
+
+            </div>
+
+            <br>
+            <hr>
+       
+        <!-- adding icons -->
+         <div class="row">
+            <div class="col-md-7"><i class="fa-regular fa-copyright fa-sm"></i>2025 PetPal.com | All trademarks are owned by Société des Produits Nestlé S.A., or used with permission.</div>
+            <div class="col-md-5"style="text-align:center"><i class="fa-brands fa-facebook-f fa-xl"></i>&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-twitter fa-xl"></i>&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-instagram fa-xl"></i>&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-youtube fa-xl"></i>&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-pinterest fa-xl"></i></div>
+         </div>   
+
+    </footer>
+    <!-- closing footer -->
+    </div>
+</body>
+</html>

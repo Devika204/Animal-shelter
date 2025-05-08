@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .card
+        {
+            transition: 0.4s ease;
+        }
+        .card:hover
+        {
+            transform: scale(1.07);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- navbar with search bar -->
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid d-flex">
+            <!-- Logo Section -->
+            <a href="Home.html">
+                <img style="margin-left: 60px;" src="logo.png" alt="Logo" width="120px" height="120px">
+            </a>
+    
+            <!-- Search Form Section -->
+            <form class="d-flex">
+                <input class="form-control me-2 " type="search" placeholder="Search..." style="width: 100%; border: 1px solid black; border-radius: 10px;">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+        <!-- code for offcanvas -->
+        <div class="container-fluid">
+            <div class="row bg-warning" style="text-align: center;">
+
+                <!-- button for offcanvas -->
+                <div class="col-sm-1">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling">
+                        <i class="fa-solid fa-bars fa-xs"></i>
+                    </button>
+                </div>
+
+                <div class="offcanvas offcanvas-start" id="offcanvasScrolling">
+            
+                    <!-- contents inside the offcanvas -->
+                    <div class="offcanvas-header">
+
+                        <!-- logo -->
+                        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+                            <h1>Pet<span style="color: palevioletred;">P</span>al</h1>
+                        </h5>
+            
+                        <!-- close button for offcanvas -->
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+            
+                    <!-- contents inside offcanvas -->
+                    <div class="offcanvas-body">
+                        <hr>
+                        
+                        <a style="text-decoration: none; font-size: x-large;" href="Home.html">Home</a>        <br>
+                        <a style="text-decoration: none; font-size: x-large;" href="About.html">About</a>      <br>
+                        <a style="text-decoration: none; font-size: x-large;" href="Services.html">Services</a>        <br>
+                        <a style="text-decoration: none; font-size: x-large;" href="Gallery.html">Gallery</a>       <br>
+
+                        <hr>
+
+                        <a style="text-decoration: none; font-size: x-large;" href="Donate.html">Donate Us</a>        <br>
+                        <a style="text-decoration: none; font-size: x-large;" href="Donation.html">Help</a>      <br>
+
+                    </div>
+                               
+                </div>
+                <!-- ending offcanvas -->
+
+                <!-- creating a dropdown -->                
+                <div class="dropdown lin col-sm-2">
+
+                    <!-- dropdown-1 -->
+                    <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Adopt or Get Involved
+                    </button>
+            
+                    <ul class="dropdown-menu w-100" style="padding-left: 10px;">
+                        <li><a class="dropdown-item" href="#">About Petfinder</a></li>
+                        <li><a class="dropdown-item" href="#">Adopting Pets</a></li>
+                        <li><a class="dropdown-item" href="#">Animal Shelters & Rescues</a></li>
+                        <li><a class="dropdown-item" href="#">Petfinder Foundation</a></li>
+                    </ul>
+                </div>
+        
+                <div class="dropdown col-sm-3">
+                    <!-- dropdown-2 -->
+                    <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Dogs & Puppies
+                    </button>
+                    
+                    <ul class="dropdown-menu w-100" style="padding-left: 10px;">
+                        <li><a class="dropdown-item" href="#">Dog Adoption</a></li>
+                        <li><a class="dropdown-item" href="#">Dog Breeds</a></li>
+                        <li><a class="dropdown-item" href="#">Feeding Your Dog</a></li>
+                        <li><a class="dropdown-item" href="#">Dog Behavior</a></li>
+                        <li><a class="dropdown-item" href="#">Dog Health & Wellness</a></li>
+                        <li><a class="dropdown-item" href="#">Dog Training</a></li>
+                        <li><a class="dropdown-item" href="#">Other Dog Information</a></li>
+                    </ul>
+                </div>
+        
+                <div class="dropdown col-sm-3">
+
+                    <!-- dropdown-3 -->
+                    <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Cats & Kittens
+                    </button>
+                    
+                    <ul class="dropdown-menu w-100" style="padding-left: 10px;">
+                        <li><a class="dropdown-item" href="#">Cat Adoption</a></li>
+                        <li><a class="dropdown-item" href="#">Cat Breeds</a></li>
+                        <li><a class="dropdown-item" href="#">Feeding Your Cat</a></li>
+                        <li><a class="dropdown-item" href="#">Cat Behavior</a></li>
+                        <li><a class="dropdown-item" href="#">Cat Health & Wellness</a></li>
+                        <li><a class="dropdown-item" href="#">Cat Training</a></li>
+                        <li><a class="dropdown-item" href="#">Other Cat Information</a></li>
+                    </ul>
+                </div>
+        
+                <div class="dropdown col-sm-3">
+
+                    <!-- dropdown-4 -->
+                    <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Other Types of Pets
+                    </button>
+                   
+                    <ul class="dropdown-menu w-100" style="padding-left: 10px;">
+                        <li><a class="dropdown-item" href="#">Birds</a></li>
+                        <li><a class="dropdown-item" href="#">Exotic Pets</a></li>
+                        <li><a class="dropdown-item" href="#">Guinea Pigs</a></li>
+                        <li><a class="dropdown-item" href="#">Horses</a></li>
+                        <li><a class="dropdown-item" href="#">Rabbits</a></li>
+                        <li><a class="dropdown-item" href="#">Reptiles</a></li>
+                        <li><a class="dropdown-item" href="#">Small & Furry Pets</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- ending dropdown -->
+
+
+        <!-- code for carousel -->
+    <div id="carouselEg" class="carousel slide" style="border: 7px solid black;">
+        <div class="carousel-inner">
+
+            <!-- 1st main image -->
+            <div class="carousel-item active">
+                <img src="pic4.png" width="100%" class="w=100">
+            </div>
+
+            <!-- 2nd image -->
+            <div class="carousel-item">
+                <img src="pic2.png" width="100%" class="w=100">
+            </div>
+
+            <!-- 3rd image -->
+            <div class="carousel-item">
+                <img src="https://img.freepik.com/free-photo/smiley-woman-spending-time-with-cute-rescue-dogs-shelter_23-2148682966.jpg?semt=ais_hybrid" width="100%" class="w=100">
+            </div>
+
+            <!-- 4th image -->
+            <div class="carousel-item">
+                <img src="pic.png" width="100%" class="w=100">
+            </div>
+
+            <!-- 5th image -->
+            <div class="carousel-item">
+                <img src="pic6.png" width="100%" class="w=100">
+            </div>
+
+            <!-- previous button for carousel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselEg" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <!-- next button for carousel -->
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselEg" data-bs-slide="next">
+                <span class="carousel-control-next-icon" ></span>
+            </button>
+
+        </div>
+    </div>
+    <!-- ending carousel -->
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <h1 style="margin-left: 50px;letter-spacing: 6px; font-weight: bold;">About PetPal</h1>
+
+
+    <!-- code for the paragraph with a image card -->
+    <div class="container-fluid">
+        <div class="row" style="margin: 20px;">
+
+            <!-- ist paragraph -->
+            <div class="col-md-9">
+                <p style="background-color: lavender;font-size: x-large;padding: 20px;">
+                    <span style="font-size: 50px;">W</span>elcome to PetPal, your trusted partner in pet adoption! With over 25 years of experience in animal welfare, we’re committed to helping pets find loving homes and families discover their perfect furry companions.  
+                    <br>
+                    Our platform features detailed profiles of adoptable pets in your area, whether you’re looking for a playful puppy, a snuggly kitten, or a calm senior friend. Each listing is designed to help you find the best match for your lifestyle.  
+                    <br>
+                    We also offer expert tips on pet care, training, and health to ensure you’re fully prepared for life with your new pet.  
+                    <br>
+                    Join PetPal today and take the first step in building a lifelong bond with a pet who’s waiting just for you! 🐾❤️
+                </p>
+            </div>
+            <!-- end paragraph -->
+
+            <!-- adding a photo using cards -->
+            <div class="col-md-3">        
+                <div class="card" style="box-shadow: 2px 2px 8px black;background-color: lavender;transform: none;">
+                    <!-- adding image -->
+                    <img src="pic5.png" class="card-img-top" height="340px" width="100px">
+
+                    <!-- adding the contents -->
+                    <div class="card-body"style="transform: none;">
+                        <h5 style="text-align: center;">Find your best match        <br>
+                            <button class="btn btn-info mt-1"><a href="#" class="text-dark" style="text-decoration: none;">Get Started</a></button>
+                        </h5>
+                    </div>
+
+                </div>
+            </div> 
+
+        </div>
+    </div>
+    <!-- end the 1st paragraph with image code -->
+
+    <br><br><br><br><br><br>
+
+    
+    <br>
+
+    <!-- creating a form -->
+    <div class="container">
+
+        <!-- title of the form -->
+        <h1 style="margin-left: 50px;letter-spacing: 6px; font-weight: bold;">Find Pet-Adoption Groups</h1>
+        <div class="row">
+
+            <!-- form -->
+            <form style="background-color: rgb(180, 180, 215);">
+                
+                <!-- location text area -->
+                <input style="margin-left: 50px;margin-top: 30px; height: 55px; padding-left: 20px; border-radius: 10px; width: 70%;" type="text" class="col-md-1" placeholder="Location">
+                <br>
+
+                <!-- code for range -->
+                <label class="form-label" style="margin-left: 40px;margin-top: 20px; padding-left: 20px; border-radius: 10px; width: 70%;">
+                    <h5>Location Range</h5>
+                </label>
+                
+                <!-- adding counts to range -->
+                <input style="margin-left: 40px;width: 70%; border: 2px solid purple; border-radius: 50%;" type="range" class="form-range" min="0" max="5" step="0.5">
+                
+                    <div class="col-md-9">
+                        <p style="margin-left: 40px;" class="float-start">0</p><p class="float-end">1000</p>
+                    </div>
+                <br>
+
+                <!-- code for group name text area -->
+                <input style="margin-left: 45px;margin-top: 20px; height: 55px; padding-left: 20px; border-radius: 10px; width: 70%;" type="text" class="col-md-1" placeholder="Group Name">
+
+               
+                <div class="container-fluid mt-5" >
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label class="form-label" style="margin-left: 35px; border-radius: 10px; width: 100%;">
+                                <h5>Are you interested to form group from people anywhere from the world ?</h5>
+                            </label>  
+                        </div>
+
+                        <!-- code for switch -->
+                        <div class="col-md-6">
+                            <div class="form-switch">
+                                <input class="form-check-input" type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br><br>
+
+                <!-- code for creating search button -->
+                <button type="button" class="btn btn-warning btn-md" style="margin-left: 35%;margin-bottom: 30px;">
+                    <a class="text-primary" href="#" style="text-decoration: none;">Search</a>
+                </button>
+            </form> 
+        </div>
+   </div>
+   <!-- end of creating form code -->
+
+   <br><br><br><br>
+
+    <!-- code for available pets -->
+   <h1 class="text-center" style="color: darkkhaki">Pets Available for Adoption Nearby ></h1>
+
+    <br><br><br><br>
+
+    <div class="container" style="display: flex; justify-content: center; align-items: center;">
+        <div class="row" style="display: flex; justify-content: center; align-items: center;">
+
+            <!-- pet1  details -->
+            <div class="col-md-3">
+                <div class="card" style="box-shadow: 2px 2px 8px black;">
+                    <img src="pet5.png" class="card-img-top" height="300px" width="100px">
+                    <div class="card-body">
+
+                        <h5 style="text-align: center;">Linda       <br>
+                            <button class="btn btn-warning mt-1"><a href="#" class="text-dark" style="text-decoration: none;">Check</a></button>
+                        </h5>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- pet2  details -->
+            <div class="col-md-3">        
+                <div class="card" style="box-shadow: 2px 2px 8px black;">
+                    <img src="pet6.png" class="card-img-top" height="300px" width="100px">
+                    <div class="card-body">
+
+                        <h5 style="text-align: center;">Pascal          <br>
+                            <button class="btn btn-warning mt-1"><a href="#" class="text-dark" style="text-decoration: none;">Check</a></button>
+                        </h5>
+
+                    </div>
+                </div>
+            </div> 
+
+            <!-- pet3 details -->
+            <div class="col-md-3">        
+                <div class="card" style="box-shadow: 2px 2px 8px black;">
+                    <img src="pet7.png" class="card-img-top" height="300px" width="100px">
+                    <div class="card-body">
+
+                        <h5 style="text-align: center;">Mochi           <br>
+                            <button class="btn btn-warning mt-1"><a href="#" class="text-dark" style="text-decoration: none;">Check</a></button>
+                        </h5>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- pet4  details -->
+            <div class="col-md-3">        
+                <div class="card bg-warning" style="box-shadow: 2px 2px 8px black;">
+                    <h3 style="height: 295px; display: flex; justify-content: center; align-items: center; text-align: center; margin-top: 30px;" class="bg-warning">
+                        <div>
+                            15 more pets available on PetPal
+                            <br>
+                            <i class="fa-solid fa-paw fa-lg" style="margin-top: 20px; color: #ff9900;"></i>
+                        </div>
+                    </h3>
+                    
+                    <!-- button -->
+                    <div class="card-body bg-light d-flex justify-content-center">
+                        <h5>
+                            <button class="btn btn-dark"><a href="#" class="text-light" style="text-decoration: none;">MEET THEM</a></button>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- end of available pets -->
+
+    <br><br><br><br><br><br>
+    <hr>
+    <!-- horizontal line tag -->
+    <br>
+
+    <!-- code for footer -->
+    <footer style="padding-bottom: 20px;">
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="col-md-3">        
+                    
+                    <!-- footer logo -->
+                    <div class="foot" style="margin-left: 70px;"><img  src="logo.png" alt="Logo"  width="80px" height="80px"></div> 
+                           
+                </div> 
+
+                <!-- resource details using gridline components -->
+                <div class="col-md-3">
+                    <h4>Resources</h4>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">FAQs</a>       <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Mobile App Download</a>        <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Partnerships</a>           <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">News Center</a>            <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Put Petfinder On Your Site</a>         <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">For Developers</a>         <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Contact Us</a>         <br>              
+                </div>
+
+                <!-- Adopt or Get Involved details using gridline components -->
+                <div class="col-md-3">        
+                    
+                    <h4>Adopt or Get Involved</h4>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Adopt or Get Involved</a>       <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">All Adopt or Get Involved</a>        <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Adopting Pets</a>           <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Animal Shelters & Rescues</a>            <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Other Types of Pets</a>         <br>      
+                           
+                </div> 
+
+                <!-- About Dogs & Cats details using gridline components -->
+                <div class="col-md-3">        
+                    
+                    <h4>About Dogs & Cats</h4>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Dogs & Cats Adoption</a>       <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Dogs & Cats Breeds</a>        <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Feeding Your Dogs & Cats</a>           <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Dogs & Cats Behavior</a>            <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Dogs & Cats Health & Wellness</a>         <br> 
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Dogs & Cats Training</a>         <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Dogs & Cats Other Dog Information</a>         <br>
+                           
+                </div>
+
+            </div>
+
+            <br>
+            <hr>
+       
+         <!-- adding icons -->   
+         <div class="row">
+            <div class="col-md-7"><i class="fa-regular fa-copyright fa-sm"></i>2025 PetPal.com | All trademarks are owned by Société des Produits Nestlé S.A., or used with permission.</div>
+            <div class="col-md-5 text-center"><i class="fa-brands fa-facebook-f fa-xl"></i>&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-twitter fa-xl"></i>&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-instagram fa-xl"></i>&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-youtube fa-xl"></i>&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-pinterest fa-xl"></i></div>
+         </div>   
+
+    </footer>
+    </div>
+    
+</body>
+</html>

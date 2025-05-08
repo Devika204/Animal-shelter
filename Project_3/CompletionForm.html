@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you !! </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-secondary">
+
+    <div class="container pt-2" style="background-color: peachpuff; border-left: 100px solid black; border-right: 100px solid black;">
+        <div class="row">
+
+            <!-- 1st heading -->
+            <h1 class="text-center" style="letter-spacing: 4px;"><i>Thank you for your kindness!</i></h1>
+            <!-- 2nd heading -->
+            <h4 class="text-center text-secondary" style="font-family: 'Courier New', Courier, monospace; font-weight: bold;">
+                Your donation is making a difference in the lives of rescued animals.
+            </h4>
+
+            <div class="text-start text-center mt-3" style="border: 1px solid black;padding-top: 15px;">
+                <p style="font-size: large;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    <strong>Donation Amount:</strong> $50
+                </p>
+
+                <p style="font-size: large;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    <strong>Transaction ID:</strong> 123456ABC
+                </p>
+
+                <p style="font-size: large;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    <strong>Date:</strong> January 30, 2025
+                </p>
+
+            </div>
+
+            <!-- image code -->
+            <img src="pic11.png" class="d-block mx-auto img-fluid" style=" height: 374px; width: 500px;">
+            
+            <br>
+            
+            <p class="text-center text-danger" style="font-size: large;"><i>Your generous gift will provide food, medical care, and shelter for rescued animals in need.</i></p>
+
+            <!-- code for toast -->
+            <a class="text-center link-primary" href="#" id="liveToastBtn">Download Receipt</a>
+            <div class="toast-container">
+
+                <div id="liveToast" class="toast" >
+                    <div class="toast-body text-center">
+                        <p>Successfully Downloaded</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <a class="text-center link-success pb-2" href="Home.html">Return to Home Page</a>
+            
+        </div>
+    </div>
+   
+    <!-- JavaScript to show the toast -->
+    <script>
+        var toastTrigger = document.getElementById('liveToastBtn');
+        var toastLiveExample = document.getElementById('liveToast');
+        if (toastTrigger) {
+            toastTrigger.addEventListener('click', function () {
+                var toast = new bootstrap.Toast(toastLiveExample);
+                toast.show();
+            });
+        }
+    </script>
+    
+</body>
+</html>

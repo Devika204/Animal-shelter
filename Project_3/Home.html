@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-PetPal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+    .Checklist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: lavender;
+    }
+
+    .Checklist-items {
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+    }
+    .but{
+        margin-top: 10px;
+        padding: 10px 20px;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .card
+    {
+        transition: 0.4s ease;
+    }
+    .card:hover
+    {
+        transform: scale(1.07);
+    }
+</style>
+<body>
+    <!-- making alert notification on the top -->
+    <div class="alert alert-info text-end">
+        <a href="Donation.html" class="link-primary">Help animal victims of California wildfires now</a>     
+        <span class="badge text-bg-dark" style="cursor: pointer;">></span>
+    </div>
+
+    <!-- nav bar with search bar -->
+    <nav class="navbar bg-body-tertiary">
+        <div class="container d-flex">
+            <!-- Logo Section -->
+            <a href="Home.html">
+                <img src="logo.png" alt="Logo" width="120px" height="120px">
+            </a>
+    
+            <!-- Search Form Section -->
+            <form class="d-flex">
+                <input class="form-control me-2 " type="search" placeholder="Search..." style="width: 100%; border: 1px solid black; border-radius: 10px;">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    
+
+    <!-- code to make NAVBAR COLLAPSE IN MOBILE DEVICE -->
+    <!-- also making it sticky at the top -->
+    <nav class="navbar navbar-expand-sm bg-warning navbar-light sticky-top" id="nav">
+        <div class="container-fluid">
+            <!-- Navbar Toggler for Mobile View -->
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navbar Links -->
+            <!-- Make the navbar items collapsible on mobile devices -->
+            <div class="collapse navbar-collapse justify-content-center w-100" id="myNavbar">
+                <ul class="navbar-nav  d-flex justify-content-around text-center w-100">
+                    <li class="nav-item">
+                        <a class="nav-link text-light text-decoration-none" style="font-size: 25px;text-shadow: 2px 2px 4px black;" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light text-decoration-none" style="font-size: 25px;text-shadow: 2px 2px 4px black;" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light text-decoration-none" style="font-size: 25px;text-shadow: 2px 2px 4px black;" href="Services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light text-decoration-none" style="font-size: 25px;text-shadow: 2px 2px 4px black;" href="Gallery.html">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <br>
+
+    <!-- 1st paragraph about petpal -->
+    <div class="container-fluid">
+        <div class="row mx-2">
+            <div class="col-md-12" style="font-size: 25px; margin-top: 0px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                <span style="color: yellow;font-size: 55px;text-shadow: 2px 2px 8px black; margin-left: 40px;">P</span>et adoption is a beautiful act of kindness that gives animals in need a second chance at life. By adopting from shelters or rescue organizations, 
+                you not only save a life but also gain a loyal companion who offers unconditional love. Adoption is often more affordable than buying, 
+                with many pets already vaccinated, spayed, or neutered. Beyond the cost benefits, having a pet can improve mental health, reduce stress, 
+                and bring endless joy. Before adopting, ensure you’re ready for the commitment and care they deserve. Choosing adoption changes lives—for 
+                both you and your new furry friend. 🐾❤️
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br><br>
+
+    <!-- showing available pets using cards -->
+    <h1 style="text-align: center;color: darkkhaki">Pets Available for Adoption</h1>
+
+    <br><br><br><br>
+
+    <!-- showing available pets using cards -->
+    <div class="container-fluid" style="display: flex; justify-content: center; align-items: center;">
+        <div class="row" style="display: flex; justify-content: center; align-items: center;">
+
+            <!-- pet1 Rubie details -->
+            <div class="col-md-3">
+                <div class="card" style="box-shadow: 2px 2px 8px black;">
+                    <img src="pet1.png" class="card-img-top" height="300px" width="100px">
+                    <div class="card-body">
+
+                        <h5 style="text-align: center;">Rubie       <br>
+                            <button class="btn btn-warning mt-1"><a href="#" class="text-dark" style="text-decoration: none;">Check</a></button>
+                        </h5>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- pet2 Lisa details -->
+            <div class="col-md-3">        
+                <div class="card" style="box-shadow: 2px 2px 8px black;">
+                    <img src="pet4.png" class="card-img-top" height="300px" width="100px">
+                    <div class="card-body">
+
+                        <h5 style="text-align: center;">Lisa        <br>
+                            <button class="btn btn-warning mt-1"><a href="#" class="text-dark" style="text-decoration: none;">Check</a></button>
+                        </h5>
+                        
+                    </div>
+                </div>
+            </div> 
+
+            <!-- pet3 Michael details -->
+            <div class="col-md-3">        
+                <div class="card" style="box-shadow: 2px 2px 8px black;">
+                    <img src="pet2.png" class="card-img-top" height="300px" width="100px">
+                    <div class="card-body">
+                        <h5 style="text-align: center;">Michael     <br>
+                            <button class="btn btn-warning mt-1"><a href="#" class="text-dark" style="text-decoration: none;">Check</a></button>
+                        </h5>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- pet4 Marco details -->
+            <div class="col-md-3">        
+                <div class="card" style="box-shadow: 2px 2px 8px black;">
+                    <img src="pet3.png" class="card-img-top" height="300px" width="100px">
+                    <div class="card-body">
+
+                        <h5 style="text-align: center;">Marco       <br>
+                            <button class="btn btn-warning mt-1"><a href="#" class="text-dark" style="text-decoration: none;">Check</a></button>
+                        </h5>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br>
+
+    <!-- about PLANNING TO ADOPT A PET -->
+    <h1 class="text-center" style="color: darkkhaki">PLANNING TO ADOPT A PET?</h1>
+
+    <div class=" Checklist container-fluid">
+
+        <!-- details about Checklist for new adopters -->
+        <div class="Checklist-items row">
+            
+            <!-- details about Checklist for new adopters -->
+            <div class="col-md-3">
+                <h4 class="text-uppercase">Checklist for new adopters</h4>
+                <p>Make the adoption transition as smooth as possible.</p>       <br>
+                <button type="button" class="but bg-primary text-capitalize" style="margin-top: 61px;">learn more</button>        <br>         
+            </div>
+
+            <!-- how old is a dog details -->
+            <div class="col-md-3">        
+                
+                <h4 class="text-uppercase">How old is a dog in human years ?</h4>
+                <p>How Old Is A Dog In Human Years?         <br>
+                    Learn to translate dog years to human years just for fun, and vice versa. Finally answer how old your dog is!
+                </p>       <br>
+                <button type="button" class="but bg-primary text-capitalize">learn more</button>        <br>
+
+            </div> 
+
+            <!-- faqs -->
+            <div class="col-md-3">        
+                
+                <h4 class="text-uppercase">Pet Adoption FAQs</h4>
+                <p>Get answer to all the you questions you haven’t thought of for your adoption.</p>       <br>
+                <button type="button" class="but bg-primary text-capitalize" style="margin-top: 85px;">learn more</button>        <br>
+                       
+            </div>
+
+        </div>
+
+    </div>
+
+    <br><br><br><br><br><br>
+    <hr>
+    <br>
+
+    <!-- footer part of the website -->
+    <footer style="margin-bottom: 20px;">
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="col-md-3">        
+                    
+                    <div class="foot" style="margin-left: 70px;"><img  src="logo.png" alt="Logo"  width="80px" height="80px"></div> 
+                           
+                </div> 
+
+                <!-- resource details using gridline components -->
+                <div class="col-md-3">
+                    <h4>Resources</h4>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">FAQs</a>       <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Mobile App Download</a>        <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Partnerships</a>           <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">News Center</a>            <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Put Petfinder On Your Site</a>         <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">For Developers</a>         <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Contact Us</a>         <br>              
+                </div>
+
+                <!-- Adopt or Get Involved details using gridline components -->
+                <div class="col-md-3">        
+                    
+                    <h4>Adopt or Get Involved</h4>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Adopt or Get Involved</a>       <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">All Adopt or Get Involved</a>        <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Adopting Pets</a>           <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Animal Shelters & Rescues</a>            <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Other Types of Pets</a>         <br>      
+                           
+                </div> 
+
+                <!-- About Dogs & Cats details using gridline components -->
+                <div class="col-md-3">        
+                    
+                    <h4>About Dogs & Cats</h4>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Dogs & Cats Adoption</a>       <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Dogs & Cats Breeds</a>        <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Feeding Your Dogs & Cats</a>           <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Dogs & Cats Behavior</a>            <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Dogs & Cats Health & Wellness</a>         <br> 
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Dogs & Cats Training</a>         <br>
+                    <a href="About.html" style="text-align: center;text-decoration: none;">Dogs & Cats Other Dog Information</a>         <br>
+                           
+                </div>
+
+            </div>
+
+            <br>
+            <hr>
+       
+        <!-- adding icons -->
+         <div class="row">
+            <div class="col-md-7"><i class="fa-regular fa-copyright fa-sm"></i>2025 PetPal.com | All trademarks are owned by Société des Produits Nestlé S.A., or used with permission.</div>
+            <div class="col-md-5"style="text-align:center"><i class="fa-brands fa-facebook-f fa-xl"></i>&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-twitter fa-xl"></i>&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-instagram fa-xl"></i>&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-youtube fa-xl"></i>&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-pinterest fa-xl"></i></div>
+         </div>   
+
+    </footer>
+    </div>
+   
+</body>
+</html>
